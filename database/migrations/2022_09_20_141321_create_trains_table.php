@@ -22,8 +22,8 @@ class CreateTrainsTable extends Migration
             $table->string('end_time', 20);
             $table->smallInteger('train_code');
             $table->tinyInteger('carriages_number');
-            $table->boolean('in_time')->default(1);
-            $table->boolean('delay')->default(1);
+            $table->boolean('in_time');
+            $table->boolean('delay');
             $table->timestamps();
         });
     }
